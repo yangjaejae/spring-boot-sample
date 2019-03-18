@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="EUC-KR">
+<title>top page</title>
+</head>
+<style>
+	h1 { font-size: 18pt; font-weight: bold; color: gray; }
+	body { font-size: 13pt; color: gray; margin: 5px 25px; }
+</style>
+<style th:inlude="part :: frag_style"></style>
+<body>
+	<h1 th:text="#{content.title}">hello page</h1>
+	<div th:include="part :: frag_body">
+		<p>this is original content.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>top page</title>
+</head>
+<body>
+	<h1 th:text="#{content.title}">hello page</h1>
+	<div th:switch="${check}">
+		<p th:case="0" th:text="|${month} - winter|"></p>
+		<p th:case="1" th:text="|${month} - winter|"></p>
+		<p th:case="2" th:text="|${month} - winter|"></p>
+		<p th:case="3" th:text="|${month} - winter|"></p>
+		<p th:case="4" th:text="|${month} - winter|"></p>
+		<p th:case="*">?....</p>
+	</div>
+</body>
+</html>

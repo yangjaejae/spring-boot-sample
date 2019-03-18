@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>top page</title>
+<meta http-equiv="Content-type" content="text/html: charset=UTF-8" />
+<style type="text/css">
+	h1 { font-size: 19pt; font-weight: bold; color: gray; }
+	body { font-size: 13pt; color: gray; margin: 5px 25px; }
+</style>
+</head>
+<body>
+	<h1>hello page</h1>
+	<p>this is Thymeleaf sample page.</p>
+	<p th:text="${new java.util.Date().toString()}"></p>
+	<p th:text="${#dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm')}"></p>
+	<p th:text="${#numbers.formatInteger(1234,7)}"></p>
+	<p th:text="${#strings.toUpperCase('welcome to spring.')}"></p>
+</body>
+</html>
